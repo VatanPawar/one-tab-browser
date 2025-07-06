@@ -1,0 +1,6 @@
+node_modules/
+*.exe
+*.log
+.DS_Store
+OneTabBrowser-win32-x64/
+dist/

@@ -1,0 +1,24 @@
+{
+   "action": {
+      "default_popup": "src/popup/popup.html"
+   },
+   "author": "Ephraim Atta-Duncan",
+   "content_scripts": [ {
+      "css": [ "src/styles/styles.css" ],
+      "exclude_matches": [ "https://music.youtube.com/*" ],
+      "js": [ "src/content/content.js" ],
+      "matches": [ "https://*.youtube.com/*" ]
+   } ],
+   "description": "An extension for that replaces the YouTube UI with a minimal design containing no recommendations, shorts, or distractions.",
+   "icons": {
+      "128": "assets/128x128.png",
+      "16": "assets/16x16.png",
+      "48": "assets/48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhdJzVIZwliBj+MwWF196pDk5prL/NHtbeW4roKWbBs25hOfgYDGUfUgSFES+dudYpzGwGGzYODoIDn5uA+sr4K7Y8imJVMZThzF4A939BcY0qEqZ4/ZZPuy/nn+/NSHprlIj9vG43tGAHaJ3C8eS07jSFFOvaT/COC/2bv6M0kuagcULctNbsIccPZcNB6jIX8AqH2KiScA1vlsmf0OPb3LKxfMNxRbUjCacDFkMJlkWZ2Bp7iaNLnhKnhxjjzFa/RmtBabnIuuAzcw6Ha8ZnmN/Oz+1WPQIYCYYEnzSjliGFrOHzMIZFgacLrrFTdetOwpzPYYPvnADShjJ7skFZwIDAQAB",
+   "manifest_version": 3,
+   "name": "Minimal YouTube",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.1"
+}
